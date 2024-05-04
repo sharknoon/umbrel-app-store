@@ -12,7 +12,7 @@ services:
       # The port your app's web server is listening on
       APP_PORT: 3000
   
-  web:
+  app:
     # Note: always use the image digest to ensure reproducability across installations
     image: ghcr.io/sharknoon/pixina:latest@sha256:b71eb3a893af30162f3a00816c664503d74b5934e995c2dfbe84d5f5a0c1a163
     restart: on-failure
