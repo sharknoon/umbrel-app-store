@@ -14,7 +14,7 @@ services:
   
   app:
     # Note: always use the image digest to ensure reproducability across installations
-    image: ghcr.io/sharknoon/pixina:latest@sha256:b71eb3a893af30162f3a00816c664503d74b5934e995c2dfbe84d5f5a0c1a163
+    image: ghcr.io/sharknoon/pixina:latest
     restart: on-failure
     stop_grace_period: 1m
     # ports:
@@ -58,7 +58,7 @@ services:
       # $APP_SEED - Unique 256 bit long hex string (128 bits of entropy) deterministically derived from user's Umbrel seed and your app's ID
       
   server:
-    image: ghcr.io/sharknoon/pixina-backend:latest@sha256:56d91accbe3efcb9e2d201688d6c1e94ed0da01ca069156cd993f1d4e8602ec2
+    image: ghcr.io/sharknoon/pixina-backend:latest
     restart: on-failure
     stop_grace_period: 1m
     volumes:
