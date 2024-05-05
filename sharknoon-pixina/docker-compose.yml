@@ -44,7 +44,7 @@ services:
       # Pass any environment variables to your app for configuration in the form:
       # VARIABLE_NAME: value
       PIXINA_PIXELHOBBY_TILE_ID: 35007450218648
-      PIXINA_API_URL: http://${DEVICE_DOMAIN_NAME}/api/v1/progress
+      PIXINA_API_URL: http://${DEVICE_DOMAIN_NAME}:8363/api/v1/progress
       NITRO_PORT: 3636
       #
       # Here are all the Umbrel provided variables that you can pass through to
@@ -71,3 +71,4 @@ services:
     environment:
       PIXINA_EXCEL_POLL_INTERVAL_MS: 86400000
       PIXINA_EXCEL_POLL_URL: https://api.onedrive.com/v1.0/shares/u%21aHR0cHM6Ly8xZHJ2Lm1zL3gvcyFBcjR2UFFNR01oRGVqYzlaU3dRT2pXTVNaVk9aUVE_ZT1kbVRJclk/root/content
+      PORT: 8363
