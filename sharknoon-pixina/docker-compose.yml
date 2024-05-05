@@ -66,6 +66,8 @@ services:
     image: ghcr.io/sharknoon/pixina-backend:latest
     restart: on-failure
     stop_grace_period: 1m
+    ports:
+      - 8363:8363
     volumes:
       - ${APP_DATA_DIR}/data:/app/bin/data
     environment:
