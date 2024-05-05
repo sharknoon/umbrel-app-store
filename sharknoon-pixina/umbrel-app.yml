@@ -33,7 +33,7 @@ category: social
 version: "1.0.0"
 
 # The port your app is reachable from a webbrowser. This should be a number between 1024 and 65535.
-port: 3000
+port: 3636
 
 # A description of your app. This will be shown in the App Store.
 description: >-
