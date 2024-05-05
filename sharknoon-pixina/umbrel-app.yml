@@ -150,7 +150,41 @@ gallery:
 #    text: "420 GB"
 #    progressLabel: "580 GB left"
 #    progress: 0.42
-#widgets: []
+widgets:
+- id: "pixina-progress"
+  type: "text-with-progress"
+  refresh: "1m"
+  endpoint: "server:8363/api/v1/umbrelwidgets/progress"
+  link: "/informations"
+  example:
+    type: "text-with-progress"
+    link: "/informations"
+    title: "Fortschritt"
+    text: "59%"
+    subtext: "295 Platten"
+    progressLabel: "205 verbleibende Platten"
+    progress: 0.59
+- id: "pixina-progress-all"
+  type: "four-stats"
+  refresh: "1m"
+  endpoint: "server:8363/api/v1/umbrelwidgets/progress-all"
+  link: "/informations"
+  example:
+    type: "four-stats"
+    link: "/informations"
+    items:
+      - title: "Fertig"
+        text: "295"
+        subtext: "Platten"
+      - title: "In Arbeit"
+        text: "68"
+        subtext: "Platten"
+      - title: "Reserviert"
+        text: "0"
+        subtext: "Platten"
+      - title: "Frei"
+        text: "137"
+        subtext: "Platten"
 
 # If you are opening the terminal of an app (Settings > Advanced settings > Terminal), you can specify the default docker compose service name here. (optional)
 # This is useful, if you have multiple services in your docker-compose.yml and want to open the terminal of a specific service.
