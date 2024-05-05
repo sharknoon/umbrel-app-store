@@ -41,7 +41,7 @@ services:
       # VARIABLE_NAME: value
       PIXINA_PIXELHOBBY_TILE_ID: 35007450218648
       PIXINA_API_URL: http://${DEVICE_DOMAIN_NAME}/api/v1/progress
-      PORT: 3636
+      NITRO_PORT: 3636
       #
       # Here are all the Umbrel provided variables that you can pass through to
       # your app
