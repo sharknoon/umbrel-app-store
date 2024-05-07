@@ -18,7 +18,7 @@ id: sharknoon-pixina
 name: Pixina
 
 # The tagline should describe your app in one sentence. Do not use more than 100 characters.
-tagline: Be part of a great artwork, made out of trousands of pixels
+tagline: Be part of a great artwork, made out of tousands of pixels
 
 # This is the icon displayed in the App Store as well as on the home screen.
 # The icon is only needed for community App Stores. For the official Umbrel App Store, the icon will be uploaded via the Pull Request and stored
