@@ -43,8 +43,8 @@ services:
     environment:
       # Pass any environment variables to your app for configuration in the form:
       # VARIABLE_NAME: value
-      PIXINA_PIXELHOBBY_TILE_ID: 35007450218648
-      PIXINA_API_URL: http://sharknoon-pixina_server_1:8363/api/v1/progress
+      NUXT_PUBLIC_PIXELHOBBY_TILE_ID: 35007450218648
+      NUXT_PUBLIC_API_URL: http://${DEVICE_DOMAIN_NAME}:8363/api/v1/progress
       NITRO_PORT: 3636
       #
       # Here are all the Umbrel provided variables that you can pass through to
