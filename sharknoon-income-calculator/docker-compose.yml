@@ -42,7 +42,7 @@ services:
       # - ${APP_BITCOIN_DATA_DIR}:/bitcoin:ro
     environment:
       # Pass any environment variables to your app for configuration in the form:
-      PORT: 34104
+      SERVER_PORT: 34104
       #
       # Here are all the Umbrel provided variables that you can pass through to
       # your app
