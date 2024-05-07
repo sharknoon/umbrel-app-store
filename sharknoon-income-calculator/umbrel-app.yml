@@ -61,9 +61,9 @@ support: https://github.com/sharknoon/income-calculator/discussions
 # The gallery is an array of filenames (Official App Store) or URLs (Community App Stores) to images that will be shown in the App Store.
 # Ideally the size of the images should be 2280x1800 (19:15) pixels.
 gallery:
-  - https://raw.githubusercontent.com/sharknoon/umbrel-app-store/main/sharknoon-income-calculator/1.jpg
-  - https://raw.githubusercontent.com/sharknoon/umbrel-app-store/main/sharknoon-income-calculator/2.jpg
-  - https://raw.githubusercontent.com/sharknoon/umbrel-app-store/main/sharknoon-income-calculator/3.jpg
+  - https://raw.githubusercontent.com/sharknoon/umbrel-app-store/main/sharknoon-income-calculator/1.png
+  - https://raw.githubusercontent.com/sharknoon/umbrel-app-store/main/sharknoon-income-calculator/2.png
+  - https://raw.githubusercontent.com/sharknoon/umbrel-app-store/main/sharknoon-income-calculator/3.png
 # The release notes of the app. This should be a string that describes the changes in the new version. (optional)
 # Note: To separate paragraphs, use two empty lines instead of only one.
 #releaseNotes: >-
