@@ -18,9 +18,7 @@ services:
       - --dir=/pb_data
       - --publicDir=/pb_public
       - --hooksDir=/pb_hooks"
-    ports:
-      - 5400:5400
     volumes:
-      - ${APP_DATA_DIR}/data:/pb_data
-      - ${APP_DATA_DIR}/public:/pb_public
-      - ${APP_DATA_DIR}/hooks:/pb_hooks
+      - ${APP_DATA_DIR}/data/data:/pb_data
+      - ${APP_DATA_DIR}/data/public:/pb_public
+      - ${APP_DATA_DIR}/data/hooks:/pb_hooks
