@@ -4,15 +4,22 @@ services:
   app_proxy:
     environment:
       APP_HOST: sharknoon-pocketbase_app_1
-      APP_PORT: 8099
+      APP_PORT: 5400
       PROXY_AUTH_WHITELIST: "/api/*"
   
   app:
     image: ghcr.io/muchobien/pocketbase:0.22.11@sha256:04dd9850554a24f82cfee060ff394179baaecc0f97e7721d9dd06818d26fd671
     restart: on-failure
     stop_grace_period: 1m
+    entrypoint:
+      - /usr/local/bin/pocketbase
+      - serve
+      - --http=0.0.0.0:5400
+      - --dir=/pb_data
+      - --publicDir=/pb_public
+      - --hooksDir=/pb_hooks"
     ports:
-      - 8099:8099
+      - 5400:5400
     volumes:
       - ${APP_DATA_DIR}/data:/pb_data
       - ${APP_DATA_DIR}/public:/pb_public
