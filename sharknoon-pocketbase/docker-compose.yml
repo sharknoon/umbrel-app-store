@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: pocketbase_app_1
+      APP_HOST: sharknoon-pocketbase_app_1
       APP_PORT: 8090
       PROXY_AUTH_ADD: "false"
   

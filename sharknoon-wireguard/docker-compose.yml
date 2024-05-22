@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: wireguard_app_1
+      APP_HOST: sharknoon-wireguard_app_1
       APP_PORT: 51821
   
   app:

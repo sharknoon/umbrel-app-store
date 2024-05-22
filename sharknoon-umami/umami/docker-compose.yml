@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: umami_app_1
+      APP_HOST: sharknoon-umami_app_1
       APP_PORT: 3000
       PROXY_AUTH_ADD: "false"
   

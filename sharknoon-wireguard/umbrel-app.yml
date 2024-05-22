@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: wireguard
+id: sharknoon-wireguard
 name: WireGuard
 tagline: Run your own free and unlimited WireGuard VPN
 category: networking
