@@ -8,6 +8,7 @@ services:
   
   app:
     image: ghcr.io/wg-easy/wg-easy:12@sha256:daa94b77901bdef3cb10151416c095e64cf66a6539fa8f748c09812b60b97f49
+    user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
     ports:
