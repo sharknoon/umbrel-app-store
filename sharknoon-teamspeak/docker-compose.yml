@@ -15,7 +15,7 @@ services:
       JWT_SECRET: $APP_SEED
 
   server:
-    image: teamspeak:3.13.7@sha256:sha256:b5bdec55bc87b992c5658e739f3ce465644efa6d997633110b12be3dc3a10796
+    image: library/teamspeak:3.13.7@sha256:sha256:b5bdec55bc87b992c5658e739f3ce465644efa6d997633110b12be3dc3a10796
     user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
