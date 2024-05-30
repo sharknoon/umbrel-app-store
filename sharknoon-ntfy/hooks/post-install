@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Create the user from the umbrel credentials
+echo "Creating ntfy default user"
+"${UMBREL_ROOT}/scripts/app" compose "${APP_ID}" exec NTFY_PASSWORD=${APP_PASSWORD} ntfy user add --role=admin umbrel
