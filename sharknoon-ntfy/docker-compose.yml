@@ -14,7 +14,8 @@ services:
   
   app:
     image: binwiederhier/ntfy:v2.11.0@sha256:4a7d0f0adc6d5d9fc36e64ab55ef676e76e124a2bdd50ce115b6d9c1c7430294
-    user: "1000:1000"
+    # ntfy does not work with a custom user
+    #user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
     command:
