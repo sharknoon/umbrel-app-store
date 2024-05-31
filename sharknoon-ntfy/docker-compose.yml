@@ -22,6 +22,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/cache:/var/cache/ntfy
       - ${APP_DATA_DIR}/data/data:/etc/ntfy
+      - ${APP_DATA_DIR}/data/lib:/var/lib/ntfy
     environment:
       NTFY_BASE_URL: http://${DEVICE_DOMAIN_NAME}:${APP_PROXY_PORT}
       NTFY_ENABLE_LOGIN: true
