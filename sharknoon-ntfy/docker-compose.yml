@@ -14,8 +14,7 @@ services:
   
   app:
     image: binwiederhier/ntfy:v2.11.0@sha256:4a7d0f0adc6d5d9fc36e64ab55ef676e76e124a2bdd50ce115b6d9c1c7430294
-    # ntfy does not work with a custom user
-    #user: "1000:1000"
+    user: "1000:1000"
     restart: on-failure
     stop_grace_period: 1m
     command:
@@ -26,5 +25,5 @@ services:
     environment:
       NTFY_BASE_URL: http://${DEVICE_DOMAIN_NAME}:${APP_PROXY_PORT}
       NTFY_ENABLE_LOGIN: true
-      NTFY_AUTH_FILE: ${APP_DATA_DIR}/data/users.db
+      NTFY_AUTH_FILE: /var/lib/ntfy/user.db
       NTFY_AUTH_DEFAULT_ACCESS: deny-all
