@@ -38,7 +38,7 @@ port: 5328
 # A description of your app. This will be shown in the App Store.
 # Note: To separate paragraphs, use two empty lines instead of only one.
 description: >-
-  This is the website for our personal wedding. This site serves as a digital wedding invitation. Users can give a response, if they are participating on the wedding.
+  Dies ist die Website für unsere persönliche Hochzeit. Diese Seite dient als digitale Hochzeitseinladung. Benutzer können eine Antwort geben, wenn sie an der Hochzeit teilnehmen.
 
 # The developer of the app. This is not necessarily the submitter but the actual developer of the app.
 developer: Josua Frank
